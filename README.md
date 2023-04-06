@@ -263,7 +263,15 @@ GROUP BY DATENAME(w, ActivityDate)
 <img src="https://user-images.githubusercontent.com/102774633/230274037-9f522645-93c0-4209-a94c-1966d24fe9d6.jpg" width="500" height="300">
 <img src="https://user-images.githubusercontent.com/102774633/230274209-3f62ec26-19eb-4d46-bde2-6d33e2ed2022.jpg" width="500" height="300">
 <img src="https://user-images.githubusercontent.com/102774633/230274210-a7dbcbf1-c4f2-4a2f-b89b-b8f852ac3e1f.png" width="500" height="300">
-
+| Week_Day  | AvgVeryActiveMinutes | AvgFairlyActiveMinutes | AvgLightlyActiveMinutes | AvgSedentaryMinutes |
+| --------- | -------------------- | ---------------------- | ----------------------- | ------------------- |
+| Monday    | 23                   | 14                     | 192                     | 1027                |
+| Tuesday   | 22                   | 14                     | 197                     | 1007                |
+| Wednesday | 20                   | 13                     | 189                     | 989                 |
+| Thursday  | 19                   | 11                     | 185                     | 961                 |
+| Friday    | 20                   | 12                     | 204                     | 1000                |
+| Saturday  | 21                   | 15                     | 207                     | 964                 |
+| Sunday    | 19                   | 14                     | 173                     | 990                 |
 #### Highlights – 
 
 1. Average Very Active minutes were highest on Monday                                                                                                           
