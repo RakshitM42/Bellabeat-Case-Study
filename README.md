@@ -307,7 +307,7 @@ GROUP BY
 
 #### Highlights – 
 
-More than a 3rd of the Fitbit users is Highly Active.
+More than a 3rd of the Fitbit users are Highly Active.
 
 **4.3 AVG dist, AVG step, AVG calorie as per days of the week**
 ```
