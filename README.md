@@ -325,7 +325,7 @@ GROUP BY DATENAME(w, ActivityDate)
 #### Highlights- 
 Average distance covered, average steps count and average calories burned were found highest on Tuesdays and saturdays.
 
-**4.4 Checking corrrelation between Avg steps and Avg Calories**
+**4.4 Checking correlation between Avg steps and Avg Calories**
 ```
 SELECT AVG(TotalSteps) as AvgSteps, AVG(Calories) AS AvgCalories, Id
 FROM [dbo].[dailyActivity_merged]
