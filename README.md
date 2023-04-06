@@ -15,7 +15,6 @@ To effectively introduce their upcoming products, Bellabeat requires a comprehen
 4. **ANALYZE**
 5. **SHARE**
 6. **ACT**
-7. **Conclusion**
 
 ## _**1**_ - _ASK_ 
 ### 1.1 Business task
@@ -29,7 +28,7 @@ To analyze consumer usage of smart devices with existing competitors and gain us
 ## _**2**_ - _PREPARE_
 The dataset used for analysis is FitBit Fitness Tracker Data (CC0: Public Domain, dataset made available through Mobius/ https://www.kaggle.com/datasets/arashnic/fitbit). This dataset is available on ‘Kaggle’ platform and contains personal fitness tracker details from thirty Fitbit users
 
-## 2.1 Dataset description
+### 2.1 Dataset description
 
 1. The dataset includes information about physical activity, steps, heart rate, and sleep monitoring ranging from minute-level to daily output of the **31** Fitbit users.
 2 The data consists of **18** datasets and the data table is organized in a long format. 
@@ -258,9 +257,13 @@ WHERE VeryActiveMinutes IS NOT NULL
   AND SedentaryMinutes IS NOT NULL
 GROUP BY DATENAME(w, ActivityDate)
 ```
------------------------------GRAPH Step - 1--------
+<img src="https://user-images.githubusercontent.com/102774633/230272836-7572dd8a-ea77-4eb5-946b-9518d84e6fa3.jpg" width="500" height="300">
 
-**Highlights –** 
+<img src="https://user-images.githubusercontent.com/102774633/230274037-9f522645-93c0-4209-a94c-1966d24fe9d6.jpg" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/102774633/230274209-3f62ec26-19eb-4d46-bde2-6d33e2ed2022.jpg" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/102774633/230274210-a7dbcbf1-c4f2-4a2f-b89b-b8f852ac3e1f.png" width="500" height="300">
+
+#### Highlights – 
 
 1. Average Very Active minutes were highest on Monday                                                                                                           
 2. Average Very Active minutes were lowest on Thursday and Sunday  
@@ -299,8 +302,10 @@ GROUP BY
     WHEN TotalSteps > 12500 THEN 'Highly Active'
   END
 ```
--------------------------------------------Graph step 2---------------------------
+<img src="https://user-images.githubusercontent.com/102774633/230274744-9fc35d0a-602c-4783-9fdd-23af9d6cd5bd.png" width="500" height="300">
+
 #### Highlights – 
+
 More than a 3rd of the Fitbit users is Highly Active.
 
 **4.3 AVG dist, AVG step, AVG calorie as per days of the week**
@@ -312,7 +317,10 @@ WHERE TotalSteps IS NOT NULL
   AND Calories IS NOT NULL
 GROUP BY DATENAME(w, ActivityDate)
 ```
-----------------------------Graph step -3 ----------------------------
+<img src="https://user-images.githubusercontent.com/102774633/230275224-c9f1a0cd-30b1-4f96-8741-faade4c7ed3e.png" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/102774633/230275226-82c0689f-78d8-49cd-9919-1f0577542d79.png" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/102774633/230275228-ad725baa-07bf-4d0a-b842-3cad6902a772.png" width="500" height="300">
+  
 #### Highlights- 
 Average distance covered, average steps count and average calories burned were found highest on Tuesdays and saturdays.
 
@@ -322,9 +330,28 @@ SELECT AVG(TotalSteps) as AvgSteps, AVG(Calories) AS AvgCalories, Id
 FROM [dbo].[dailyActivity_merged]
 GROUP BY Id
 ```
----------------------Graph Step - 4 -------------
+<img src="https://user-images.githubusercontent.com/102774633/230275513-f5b57ff1-1064-4c4d-b487-29e7ca0f1b36.png" width="500" height="300">
+
 #### Highlights –
 There is moderate positive correlation between average no. of steps and average calories. 
 ## _**5**_ - _SHARE_
+Analyzing insights and trends for given Fitbit data, it can be concluded that:
 
+5.1 Most user activity for active minutes were found highest on Monday and Saturday.
+
+5.2 More than a 3rd users are highly active.
+
+5.3 Most user activity for distance covered, steps and calories burned were found highest on Tuesday and Saturday.
+
+5.4 A positive correlation was found between steps taken vs Calories burned.
 ## _**6**_ - _ACT_
+The analyzed data shows relationships between user activity levels and certain days of the week, as well as correlations between average steps taken and calories burned. These insights can be leveraged to inform the development of future Bellabeat products and functionality that align with user preferences and habits.
+The main takeaway will be the top three recommendations:
+6.1 Integrating the Leaf wearable tracker with personalised recommendations: Users who have a Leaf device can monitor their activity, sleep, stress levels, and calories with the Bellabeat app. Based on this information, Bellabeat can then offer tailored recommendations, including dietary guidance and unique training schedules.
+
+6.2 Social media marketing for the Time watch accessory: The Time gadget can be advertised through social media channels as a fashionable and practical accessory for consumers who appreciate both appearance and fitness. Bellabeat may demonstrate how the gadget tracks daily activity, provides health data, and doubles as a fashionable watch.
+
+6.3 Including the Bellabeat app in the Spring water bottle bundle: Users can monitor their daily water intake by combining the Spring water bottle and the Bellabeat app.
+
+Overall, by integrating its diverse line of products with personalized recommendations and social media promotion, Bellabeat can strengthen user engagement and build stronger brand loyalty.
+
