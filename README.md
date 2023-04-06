@@ -1,3 +1,5 @@
+# CASE STUDY: Bellabeat Health-Tech Market Analysis
+
 ## Introduction
 Bellabeat is a high-tech manufacturer of health-focused products for women and has envisioned expanding into the global smart device market. In order to successfully launch their new line of products, the company stakeholders plan to conduct a thorough analysis of the smart device fitness data and develop an effective market strategy for their new line of products.
 
@@ -263,15 +265,10 @@ GROUP BY DATENAME(w, ActivityDate)
 <img src="https://user-images.githubusercontent.com/102774633/230274037-9f522645-93c0-4209-a94c-1966d24fe9d6.jpg" width="500" height="300">
 <img src="https://user-images.githubusercontent.com/102774633/230274209-3f62ec26-19eb-4d46-bde2-6d33e2ed2022.jpg" width="500" height="300">
 <img src="https://user-images.githubusercontent.com/102774633/230274210-a7dbcbf1-c4f2-4a2f-b89b-b8f852ac3e1f.png" width="500" height="300">
-| Week_Day  | AvgVeryActiveMinutes | AvgFairlyActiveMinutes | AvgLightlyActiveMinutes | AvgSedentaryMinutes |
-| --------- | -------------------- | ---------------------- | ----------------------- | ------------------- |
-| Monday    | 23                   | 14                     | 192                     | 1027                |
-| Tuesday   | 22                   | 14                     | 197                     | 1007                |
-| Wednesday | 20                   | 13                     | 189                     | 989                 |
-| Thursday  | 19                   | 11                     | 185                     | 961                 |
-| Friday    | 20                   | 12                     | 204                     | 1000                |
-| Saturday  | 21                   | 15                     | 207                     | 964                 |
-| Sunday    | 19                   | 14                     | 173                     | 990                 |
+
+[Spreadsheet link for Active minutes](https://docs.google.com/spreadsheets/d/1q2Mqs5GBn8NbF8oRza13uLGoladzbcb3u13MMIsfEnE/edit?usp=sharing)
+
+
 #### Highlights – 
 
 1. Average Very Active minutes were highest on Monday                                                                                                           
@@ -312,6 +309,7 @@ GROUP BY
   END
 ```
 <img src="https://user-images.githubusercontent.com/102774633/230274744-9fc35d0a-602c-4783-9fdd-23af9d6cd5bd.png" width="500" height="300">
+[Spreadsheet link for Average Steps](https://docs.google.com/spreadsheets/d/1RCzQNMqBqKSuIxdc8igIPFa1oh3t0-d5N8sAuRKY7H0/edit?usp=sharing)
 
 #### Highlights – 
 
@@ -329,6 +327,8 @@ GROUP BY DATENAME(w, ActivityDate)
 <img src="https://user-images.githubusercontent.com/102774633/230275224-c9f1a0cd-30b1-4f96-8741-faade4c7ed3e.png" width="500" height="300">
 <img src="https://user-images.githubusercontent.com/102774633/230275226-82c0689f-78d8-49cd-9919-1f0577542d79.png" width="500" height="300">
 <img src="https://user-images.githubusercontent.com/102774633/230275228-ad725baa-07bf-4d0a-b842-3cad6902a772.png" width="500" height="300">
+
+[Spreadsheet link for Average distance covered, average steps count and average calories burned](https://docs.google.com/spreadsheets/d/1HL8FnZzv6woePy9a1S8aU4E2-_lAr82sajM3mQesObs/edit?usp=sharing)
   
 #### Highlights- 
 Average distance covered, average steps count and average calories burned were found highest on Tuesdays and saturdays.
@@ -340,6 +340,8 @@ FROM [dbo].[dailyActivity_merged]
 GROUP BY Id
 ```
 <img src="https://user-images.githubusercontent.com/102774633/230275513-f5b57ff1-1064-4c4d-b487-29e7ca0f1b36.png" width="500" height="300">
+
+[Spreadsheet link for Avg steps and Avg Calories](https://docs.google.com/spreadsheets/d/1jovKKtB9tgtIqYWG_WDsl4IUpHbhoqergpmFhT38I-A/edit?usp=sharing)
 
 #### Highlights –
 There is moderate positive correlation between average no. of steps and average calories. 
