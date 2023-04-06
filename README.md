@@ -166,6 +166,7 @@ FROM [dbo].[sleepDay_merged]
 ```
 SELECT MIN(Date) AS StartDate, MAX(Date) AS EndDate
 FROM [dbo].[weightLogInfo_merged]
+
 #StartDate - 2016-04-12
 #EndDate - 2016-05-12
 ```
@@ -324,7 +325,7 @@ GROUP BY DATENAME(w, ActivityDate)
 #### Highlights- 
 Average distance covered, average steps count and average calories burned were found highest on Tuesdays and saturdays.
 
-**4.4 Checking corrrelation between Avg steps and Avg Calories
+**4.4 Checking corrrelation between Avg steps and Avg Calories**
 ```
 SELECT AVG(TotalSteps) as AvgSteps, AVG(Calories) AS AvgCalories, Id
 FROM [dbo].[dailyActivity_merged]
@@ -347,11 +348,12 @@ Analyzing insights and trends for given Fitbit data, it can be concluded that:
 ## _**6**_ - _ACT_
 The analyzed data shows relationships between user activity levels and certain days of the week, as well as correlations between average steps taken and calories burned. These insights can be leveraged to inform the development of future Bellabeat products and functionality that align with user preferences and habits.
 The main takeaway will be the top three recommendations:
-6.1 Integrating the Leaf wearable tracker with personalised recommendations: Users who have a Leaf device can monitor their activity, sleep, stress levels, and calories with the Bellabeat app. Based on this information, Bellabeat can then offer tailored recommendations, including dietary guidance and unique training schedules.
 
-6.2 Social media marketing for the Time watch accessory: The Time gadget can be advertised through social media channels as a fashionable and practical accessory for consumers who appreciate both appearance and fitness. Bellabeat may demonstrate how the gadget tracks daily activity, provides health data, and doubles as a fashionable watch.
+**6.1 Integrating the Leaf wearable tracker with personalised recommendations:** Users who have a Leaf device can monitor their activity, sleep, stress levels, and calories with the Bellabeat app. Based on this information, Bellabeat can then offer tailored recommendations, including dietary guidance and unique training schedules.
 
-6.3 Including the Bellabeat app in the Spring water bottle bundle: Users can monitor their daily water intake by combining the Spring water bottle and the Bellabeat app.
+**6.2 Social media marketing for the Time watch accessory:** The Time gadget can be advertised through social media channels as a fashionable and practical accessory for consumers who appreciate both appearance and fitness. Bellabeat may demonstrate how the gadget tracks daily activity, provides health data, and doubles as a fashionable watch.
+
+**6.3 Including the Bellabeat app in the Spring water bottle bundle:** Users can monitor their daily water intake by combining the Spring water bottle and the Bellabeat app.
 
 Overall, by integrating its diverse line of products with personalized recommendations and social media promotion, Bellabeat can strengthen user engagement and build stronger brand loyalty.
 
