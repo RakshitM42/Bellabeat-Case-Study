@@ -60,7 +60,7 @@ We require daily usage patterns of smart devices to discover important insights 
 6. **sleepDay_merged.csv**
 
 ## _**3**_ - _PROCESS_
-To perform required SQL queries and handle the data ‘Big Query’ is used for this case study. The tool can verify the data for any errors, ensure data integrity, clean the data, and transform the required data for accurate analysis.
+To perform required SQL queries and handle the data ‘MS SQL Server’ is used for this case study. The tool can verify the data for any errors, ensure data integrity, clean the data, and transform the required data for accurate analysis.
 
 ### 3.1 Uploading the data
 The data can be downloaded from the ‘Kaggle’ platform and uploaded as a CSV file into the ‘MS SQL Server’. The data once uploaded can be previewed to check the data organization, ensuring the correct data type for each field parameter. 
